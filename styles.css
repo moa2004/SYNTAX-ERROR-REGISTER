@@ -90,6 +90,7 @@ button {
     transition: background-color 0.3s, transform 0.2s;
     font-weight: bold;
     text-transform: uppercase;
+    animation: buttonMove 1s infinite alternate;
 }
 
 button:hover {
@@ -115,6 +116,15 @@ button:hover {
     to {
         top: 0;
         opacity: 1;
+    }
+}
+
+@keyframes buttonMove {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
     }
 }
 
@@ -175,3 +185,5 @@ button:hover {
         padding: 12px;
     }
 }
+
+
