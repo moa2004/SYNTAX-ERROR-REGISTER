@@ -72,11 +72,12 @@ h2 {
     margin-top: 10px;
     transform: scale(1.2);
 }
-.imgg{
+
+.imgg {
     display: flex;
     margin-left: 100px;
-
 }
+
 button {
     width: 100%;
     padding: 16px;
@@ -114,5 +115,63 @@ button:hover {
     to {
         top: 0;
         opacity: 1;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .form-group label {
+        font-size: 14px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group select {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    button {
+        font-size: 18px;
+        padding: 14px;
+    }
+    
+    .imgg {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .form-group label {
+        font-size: 12px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group select {
+        font-size: 12px;
+        padding: 8px;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 12px;
     }
 }
